@@ -1,0 +1,220 @@
+@font-face {
+    font-family: "Proxima Nova";
+    src: url(../Fonts/Proxima\ Nova\ Regular.otf);
+
+}
+
+@font-face {
+    font-family: "Futura PT";
+    src: url(../Fonts/FuturaPT-Heavy.woff);
+}
+
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url(../Fonts/PlayfairDisplay-Regular.ttf);
+}
+
+
+@font-face {
+    font-family: "Georgia";
+    src: url(../Fonts/Georgia.woff);
+}
+
+@font-face {
+    font-family: "Georgia Italic";
+    src: url(../Fonts/Georgia-Italic.woff);
+}
+
+
+@keyframes flickerAnimation {
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+}
+
+
+@-webkit-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+
+
+.main {
+    background-color: #464f54;
+    width: 1200px;
+    height: 900px;
+    margin: 0 auto 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-shadow: 0px 6px 42px 8px rgba(34, 60, 80, 0.26);
+            box-shadow: 0px 6px 42px 8px rgba(34, 60, 80, 0.26);
+    position: relative;
+}
+
+
+.main__page {
+    width: 1060px;
+    height: 751px;
+    background-color: #fff;
+}
+
+
+.main__about {
+    border-left: 2px solid #e8eced;
+    height: 751px;
+    position: relative;
+    left: 67px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
+.main__contain {
+    width: 804px;
+    height: 515px;
+    margin-top: 202px;
+    margin-left: 125px;
+}
+
+
+.main__author {
+    color: #b4b4b4;
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+}
+
+
+.main__title {
+    color: #2a2a2a;
+    font-family: "Futura PT";
+    font-size: 78px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 47px;
+}
+
+
+.main__subtitle {
+    color: #8f8f8f;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+
+.main__text {
+    font-size: 27px;
+    font-weight: 400;
+    color: #000;
+    line-height: 32px;
+    letter-spacing: 0.8px;
+}
+
+
+.main__text.one {
+    margin: 55px 0 39px 0;
+}
+
+
+.main__text.italic {
+    font-style: italic;
+    font-weight: 500;
+}
+
+
+.main__control {
+    width: 760px;
+    height: 76px;
+    background-color: #fbc02d;
+    position: absolute;
+    top: 234px;
+    right: 0%;
+}
+
+
+.main__control--bar {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 25px;
+}
+
+
+.main__control--icon {
+    margin: 0 12px 0 12px;
+}
+
+
+.main__input {
+    width: 914px;
+    height: 187px;
+    background-color: black;
+    position: absolute;
+    top: 47px;
+    right: 0%;
+}
+
+
+.main__input--title {
+    color: #767676;
+    font-family: "Proxima Nova";
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 4.8px;
+    margin: 50px 0 0 63px;
+}
+
+
+.main__input--text {
+    color: #fefefe;
+    font-family: "Playfair Display";
+    font-size: 48px;
+    font-weight: 400;
+    margin-left:  63px;
+}
+
+
+.main__input--text--line {
+    border-right: 2px solid #edeff2;
+    opacity: 0.71; 
+    margin-left: 5px;
+    font-size: 30px;
+    vertical-align: 5px;
+    -webkit-animation: flickerAnimation .5s infinite;
+     animation: flickerAnimation .5s infinite;
+}
+
+
+
+
+
+.main__input--line {
+    border-top: 3px solid #ffff;
+    opacity: 0.1;
+    margin: 21px 0 0 63px; 
+
+}
